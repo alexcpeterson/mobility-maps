@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="6.21.0" title="Shotcut version 20.04.12" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="00:00:00.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-07.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:51</property>
+    <property name="shotcut:caption">workplaces_2020-03-07.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-07.png</property>
+    <property name="shotcut:hash">95a3544705cfecb4e99813982571e5e0</property>
+    <property name="ignore_points">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-08.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:54</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">9a07656ceffb73dbef0a3a9944320f1a</property>
+  </producer>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-09.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:58</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">5fb2a2130005bff01f09bc44170e984d</property>
+  </producer>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-10.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:02</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1646ab96538149f258a7feb12de1c165</property>
+  </producer>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-11.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:06</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1112b42171c2d1d3bf8c92f63460e19b</property>
+  </producer>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-12.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:10</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">987a2af79af5cb8a41697efbfdfe7565</property>
+  </producer>
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-13.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:13</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">565dd946cc1c7364ee8544620e72aeb3</property>
+  </producer>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-14.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:17</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">cde3da8a242ead668e5235e90a6c3eed</property>
+  </producer>
+  <producer id="producer8" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-15.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:21</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">e50f3339fabe10c13a10eef88ff98b70</property>
+  </producer>
+  <producer id="producer9" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-16.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:25</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">a84792403fc1dba9edbcddb125d56bfa</property>
+  </producer>
+  <producer id="producer10" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-17.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:28</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">fb639febb7379a4bd3168462ae12c299</property>
+  </producer>
+  <producer id="producer11" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-18.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:32</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">2590dc9f306efb95cdcda46e5d43ff1b</property>
+  </producer>
+  <producer id="producer12" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-19.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:36</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">fa4a282d24e8765721cf2df1cbfa84b1</property>
+  </producer>
+  <producer id="producer13" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-20.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:40</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">04a6183eb1884318fa99363b904c0fd1</property>
+  </producer>
+  <producer id="producer14" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-21.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:44</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">d88f2e61ff886d7cdb74b4105bfcdf4d</property>
+  </producer>
+  <producer id="producer15" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-22.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:48</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">926ce5abfaebb523852df4dd4e919997</property>
+  </producer>
+  <producer id="producer16" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-23.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:52</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">93275ea3548b052bdd17799e48b0b7c3</property>
+  </producer>
+  <producer id="producer17" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-24.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:55</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">64c592fc3985ef99f1e17d111dfa6e43</property>
+  </producer>
+  <producer id="producer18" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-25.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:59</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0a30aa56ad2ea4ca16cd63e007a355b6</property>
+  </producer>
+  <producer id="producer19" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-26.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:03</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">f3e2f0249b0eda3a02b61cba33452696</property>
+  </producer>
+  <producer id="producer20" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-27.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:07</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">3dec087de897344c552f581e22c3a355</property>
+  </producer>
+  <producer id="producer21" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-28.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:11</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0b7911be562058e95efd1b34ecd808f2</property>
+  </producer>
+  <producer id="producer22" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-29.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:15</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">5984b35f43a24b66bc38458938052217</property>
+  </producer>
+  <producer id="producer23" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-30.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:19</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0632fcd125b20262928b2dbbb5e7139a</property>
+  </producer>
+  <producer id="producer24" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-31.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:23</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">7241cb98709a203cb484bfcfb372b1b9</property>
+  </producer>
+  <producer id="producer25" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-01.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:27</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c77a7dd198ac79adfe24fdbe97ffb238</property>
+  </producer>
+  <producer id="producer26" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-02.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:30</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">eb47546466de3415ac29c9dab955547a</property>
+  </producer>
+  <producer id="producer27" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-03.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:34</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">e1aabe119a108f34432a0fd8ef6b2cbb</property>
+  </producer>
+  <producer id="producer28" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-04.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:38</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0a46bfaed58e4267efb7cf0687c4508c</property>
+  </producer>
+  <producer id="producer29" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-05.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:42</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">dd11c1a7ec3839308595707bff774ace</property>
+  </producer>
+  <playlist id="main_bin" title="Shotcut version 20.04.12">
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer7" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer9" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer11" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer12" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer13" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer14" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer15" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer16" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer17" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer18" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer19" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer20" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer21" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer22" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer23" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer24" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer25" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer26" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer27" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer28" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer29" in="00:00:00.000" out="00:00:00.960"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:29.960">
+    <property name="length">00:00:30.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:29.960"/>
+  </playlist>
+  <producer id="producer30" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-07.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:51</property>
+    <property name="shotcut:caption">workplaces_2020-03-07.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-07.png</property>
+    <property name="shotcut:hash">95a3544705cfecb4e99813982571e5e0</property>
+    <property name="ignore_points">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer31" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-08.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:54</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">9a07656ceffb73dbef0a3a9944320f1a</property>
+    <property name="shotcut:caption">workplaces_2020-03-08.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-08.png</property>
+  </producer>
+  <producer id="producer32" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-09.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:42:58</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">5fb2a2130005bff01f09bc44170e984d</property>
+    <property name="shotcut:caption">workplaces_2020-03-09.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-09.png</property>
+  </producer>
+  <producer id="producer33" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-10.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:02</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1646ab96538149f258a7feb12de1c165</property>
+    <property name="shotcut:caption">workplaces_2020-03-10.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-10.png</property>
+  </producer>
+  <producer id="producer34" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-11.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:06</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">1112b42171c2d1d3bf8c92f63460e19b</property>
+    <property name="shotcut:caption">workplaces_2020-03-11.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-11.png</property>
+  </producer>
+  <producer id="producer35" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-12.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:10</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">987a2af79af5cb8a41697efbfdfe7565</property>
+    <property name="shotcut:caption">workplaces_2020-03-12.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-12.png</property>
+  </producer>
+  <producer id="producer36" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-13.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:13</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">565dd946cc1c7364ee8544620e72aeb3</property>
+    <property name="shotcut:caption">workplaces_2020-03-13.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-13.png</property>
+  </producer>
+  <producer id="producer37" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-14.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:17</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">cde3da8a242ead668e5235e90a6c3eed</property>
+    <property name="shotcut:caption">workplaces_2020-03-14.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-14.png</property>
+  </producer>
+  <producer id="producer38" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-15.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:21</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">e50f3339fabe10c13a10eef88ff98b70</property>
+    <property name="shotcut:caption">workplaces_2020-03-15.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-15.png</property>
+  </producer>
+  <producer id="producer39" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-16.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:25</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">a84792403fc1dba9edbcddb125d56bfa</property>
+    <property name="shotcut:caption">workplaces_2020-03-16.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-16.png</property>
+  </producer>
+  <producer id="producer40" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-17.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:28</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">fb639febb7379a4bd3168462ae12c299</property>
+    <property name="shotcut:caption">workplaces_2020-03-17.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-17.png</property>
+  </producer>
+  <producer id="producer41" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-18.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:32</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">2590dc9f306efb95cdcda46e5d43ff1b</property>
+    <property name="shotcut:caption">workplaces_2020-03-18.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-18.png</property>
+  </producer>
+  <producer id="producer42" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-19.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:36</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">fa4a282d24e8765721cf2df1cbfa84b1</property>
+    <property name="shotcut:caption">workplaces_2020-03-19.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-19.png</property>
+  </producer>
+  <producer id="producer43" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-20.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:40</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">04a6183eb1884318fa99363b904c0fd1</property>
+    <property name="shotcut:caption">workplaces_2020-03-20.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-20.png</property>
+  </producer>
+  <producer id="producer44" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-21.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:44</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">d88f2e61ff886d7cdb74b4105bfcdf4d</property>
+    <property name="shotcut:caption">workplaces_2020-03-21.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-21.png</property>
+  </producer>
+  <producer id="producer45" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-22.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:48</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">926ce5abfaebb523852df4dd4e919997</property>
+    <property name="shotcut:caption">workplaces_2020-03-22.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-22.png</property>
+  </producer>
+  <producer id="producer46" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-23.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:52</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">93275ea3548b052bdd17799e48b0b7c3</property>
+    <property name="shotcut:caption">workplaces_2020-03-23.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-23.png</property>
+  </producer>
+  <producer id="producer47" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-24.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:55</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">64c592fc3985ef99f1e17d111dfa6e43</property>
+    <property name="shotcut:caption">workplaces_2020-03-24.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-24.png</property>
+  </producer>
+  <producer id="producer48" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-25.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:43:59</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0a30aa56ad2ea4ca16cd63e007a355b6</property>
+    <property name="shotcut:caption">workplaces_2020-03-25.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-25.png</property>
+  </producer>
+  <producer id="producer49" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-26.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:03</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">f3e2f0249b0eda3a02b61cba33452696</property>
+    <property name="shotcut:caption">workplaces_2020-03-26.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-26.png</property>
+  </producer>
+  <producer id="producer50" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-27.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:07</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">3dec087de897344c552f581e22c3a355</property>
+    <property name="shotcut:caption">workplaces_2020-03-27.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-27.png</property>
+  </producer>
+  <producer id="producer51" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-28.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:11</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0b7911be562058e95efd1b34ecd808f2</property>
+    <property name="shotcut:caption">workplaces_2020-03-28.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-28.png</property>
+  </producer>
+  <producer id="producer52" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-29.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:15</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">5984b35f43a24b66bc38458938052217</property>
+    <property name="shotcut:caption">workplaces_2020-03-29.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-29.png</property>
+  </producer>
+  <producer id="producer53" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-30.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:19</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0632fcd125b20262928b2dbbb5e7139a</property>
+    <property name="shotcut:caption">workplaces_2020-03-30.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-30.png</property>
+  </producer>
+  <producer id="producer54" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-03-31.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:23</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">7241cb98709a203cb484bfcfb372b1b9</property>
+    <property name="shotcut:caption">workplaces_2020-03-31.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-03-31.png</property>
+  </producer>
+  <producer id="producer55" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-01.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:27</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c77a7dd198ac79adfe24fdbe97ffb238</property>
+    <property name="shotcut:caption">workplaces_2020-04-01.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-04-01.png</property>
+  </producer>
+  <producer id="producer56" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-02.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:30</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">eb47546466de3415ac29c9dab955547a</property>
+    <property name="shotcut:caption">workplaces_2020-04-02.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-04-02.png</property>
+  </producer>
+  <producer id="producer57" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-03.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:34</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">e1aabe119a108f34432a0fd8ef6b2cbb</property>
+    <property name="shotcut:caption">workplaces_2020-04-03.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-04-03.png</property>
+  </producer>
+  <producer id="producer58" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-04.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:38</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">0a46bfaed58e4267efb7cf0687c4508c</property>
+    <property name="shotcut:caption">workplaces_2020-04-04.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-04-04.png</property>
+  </producer>
+  <producer id="producer59" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/alexc/iCloudDrive/Desktop/Alex's Files/covid19/workplaces_scrn/workplaces_2020-04-05.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2020-06-03T14:44:42</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">dd11c1a7ec3839308595707bff774ace</property>
+    <property name="shotcut:caption">workplaces_2020-04-05.png</property>
+    <property name="shotcut:detail">C:\Users\alexc\iCloudDrive\Desktop\Alex's Files\covid19\workplaces_scrn\workplaces_2020-04-05.png</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer30" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer31" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer32" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer33" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer34" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer35" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer36" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer37" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer38" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer39" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer40" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer41" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer42" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer43" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer44" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer45" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer46" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer47" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer48" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer49" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer50" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer51" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer52" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer53" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer54" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer55" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer56" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer57" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer58" in="00:00:00.000" out="00:00:00.960"/>
+    <entry producer="producer59" in="00:00:00.000" out="00:00:00.960"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 20.04.12" global_feed="1" in="00:00:00.000" out="00:00:29.960">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+  </tractor>
+</mlt>
