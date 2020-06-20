@@ -93,11 +93,14 @@ covid_total = covid_total.append(new_row,ignore_index=True)
 
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
-full_df = pd.read_excel(r'data/mobility_report_US.xlsx')
+full_df = pd.read_csv(r'mobility_report_US.csv',dtype={'fips':str})
 full_df_copy = full_df.copy()
-full_df_copy.county = full_df.county.str.replace(' County', '').str.replace(' Parish','')
+new_dates = []
+for date in full_df_copy.date:
+    new_dates.append(datetime.strptime(date,'%d %m %y').strftime('%Y-%m-%d'))
+full_df_copy['date'] = new_dates
 full_df_copy.state = full_df_copy.state.map(us_state_abbrev).fillna(full_df_copy.state)
-full_final = pd.merge(full_df_copy,fips[['fips','county','state']],how='left',left_on=['state','county'],right_on=['state','county'])
+full_final = full_df_copy
 final_by_state = full_final[(full_final.state != 'Total') & (full_final.county == 'Total')]
 final_by_state.state = final_by_state.replace({'District of Columbia':'DC'})
 full_final = full_final[(full_final.state != 'Total') & (full_final.county != 'Total')]
