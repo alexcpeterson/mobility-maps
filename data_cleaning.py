@@ -117,3 +117,12 @@ for state in mob_case_state.state.unique():
     prop = (mob_case_state[mob_case_state.state == state].cases / state_pop[state_pop.state == state].population.sum()).to_frame()
     proportion = proportion.append(prop)
 mob_case_state['proportion'] = proportion.cases*100
+
+scatter_labels = {
+    'grocery and pharmacy' : 'Grocery Stores and Pharmacies',
+    'retail' : 'Retail Locations',
+    'parks' : 'Parks',
+    'workplaces' : 'Workplaces',
+    'residential' : 'Residential Areas',
+    'transit stations' : 'Transit Stations'
+}

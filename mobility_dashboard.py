@@ -6,6 +6,7 @@ import numpy as np
 import re
 import plotly.graph_objs as go
 from datetime import datetime
+import math
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -47,14 +48,15 @@ case_fig = go.Figure(data=[case_trace_1],layout=case_layout)
 #     height = 700, width = 1400)
 ##Mobility Scatter
 mob_scatter_fig = px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
-          x='residential', y='cases',animation_frame = 'date',animation_group = 'state',
+          x='grocery and pharmacy', y='cases',animation_frame = 'date',animation_group = 'state',
            color = 'region', hover_name = 'state',size=dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
-          log_y = True, range_x = [0,35],range_y = [1,400000])
+          log_y = True, range_x = [-70,40],range_y = [1,500000])
 mob_scatter_fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 1500
 mob_scatter_fig.update_layout(
     #transition = {'duration' : 2000},
-    title_text = 'Comparison of Mobility to Grocery Stores and COVID-19 Cases by Geographic Region',
-    title_x = .5
+    title_text = 'Comparison of Mobility to Grocery Stores and Pharmacies and COVID-19 Cases by Geographic Region',
+    title_x = .5,
+    height = 700
     )
 
 #Step 4: Create Dash layout
@@ -116,7 +118,7 @@ mobility_map_html = html.Div([
 #tab-3
 mobility_scatter_html = html.Div([
     dcc.RadioItems(
-        id = 'mobility_map_picker',
+        id = 'mobility_scatter_picker',
         options = [
             {'label' : 'Grocery and Pharmacy','value' : 'grocery and pharmacy'},
             {'label' : 'Retail','value' : 'retail'},
@@ -125,12 +127,12 @@ mobility_scatter_html = html.Div([
             {'label' : 'Residential', 'value' : 'residential'},
             {'label' : 'Transit Stations', 'value' : 'transit stations'}
         ],
-        value = 'Grocery and Pharmacy',
-        labelStyle = {'display' : 'inline-block'}
+        value = 'grocery and pharmacy',
+        labelStyle = {'display' : 'inline-block','fontSize' : 20,'padding-top': '25px','padding-left' : '100px'}
     ),
     html.Div([
         dcc.Graph(id='mob_scatter',figure = mob_scatter_fig)
-    ])
+    ],style = {'padding-top' : '25px'})
 ])
 
 app.layout = html.Div([
@@ -163,7 +165,7 @@ def update_county_dropdown(state):
     if state == 'United States':
         return [{'label': i, 'value': 'State Total'} for i in dc.covid_total[dc.covid_total.State == state]['County Name']]
     return [{'label': i, 'value': i} for i in dc.covid_total[dc.covid_total.State == state]['County Name']]
-#update figure
+#update cases figure
 @app.callback(
     Output('cases_fig','figure'),
     [Input('state','value'),
@@ -193,7 +195,7 @@ def update_case_figure(state,county='State Total'):
         mode = 'markers')
     case_fig = go.Figure(data=[case_trace_2],layout=case_layout)
     return case_fig
-#update stats
+#update cases stats
 @app.callback(
     Output('stats','children'),
     [Input('state','value'),
@@ -229,7 +231,28 @@ def figure_stats(state,county='State Total'):
         proportion_cases = county_cases / state_cases * 100 
         text =text = "{}, {} accounts for {:.2f}% of the state's population and for {:.2f}% of the state's total COVID-19 cases."
         return text.format(county,state,proportion_pop,proportion_cases)
-
+#update scatter
+@app.callback(
+    Output('mob_scatter','figure'),
+    [Input('mobility_scatter_picker','value')])
+def update_mob_scatter_figure(metric):
+    def scatter_range(metric):
+        if metric == 'parks':
+            return [-100,250]
+        lower = dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])][metric].min()
+        upper = dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])][metric].max()
+        return [int(math.floor(lower/10.0))*10,int(math.ceil(upper / 10.0)) * 10]
+    mob_scatter_fig = px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
+        x=metric, y='cases',animation_frame = 'date',animation_group = 'state',
+        color = 'region', hover_name = 'state',size=dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
+        log_y = True, range_x = scatter_range(metric),range_y = [1,500000])
+    mob_scatter_fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 1500
+    mob_scatter_fig.update_layout(
+        title_text = 'Comparison of Mobility to ' + dc.scatter_labels[metric] + ' and COVID-19 Cases by Geographic Region',
+        title_x = .5,
+        height = 700
+    )
+    return mob_scatter_fig
 #Step 6: Add server clause
 if __name__ == '__main__':
     app.run_server(debug=False)
