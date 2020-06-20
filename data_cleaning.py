@@ -35,9 +35,9 @@ state_acs = pd.read_csv(r'data/ACS_2018_states.csv')
 acs.drop(columns=['id'],inplace=True), state_acs.drop(columns=['id'], inplace=True)
 state_acs.rename(columns = {'Geographic Area Name':'state'},inplace=True)
 no_moe = acs.columns.str.contains('Margin')
-cols = acs.columns.tolist()
+cols = acs.columns.values
 acs = acs[[cols[x] for x in range(len(cols)) if not no_moe[x]]]
-county_state = acs['Geographic Area Name'].tolist()
+county_state = acs['Geographic Area Name'].values
 county, state = [],[]
 for i in county_state:
     pattern = '(.*), (.*)'
@@ -63,7 +63,7 @@ county_pop = acs_fips[['fips','Estimate!!RELATIONSHIP!!Population in households'
 county_pop.rename(columns={'Estimate!!RELATIONSHIP!!Population in households':'population'},inplace=True)
 
 no_moe = state_acs.columns.str.contains('Margin')
-cols = state_acs.columns.tolist()
+cols = state_acs.columns.values
 state_acs = state_acs[[cols[x] for x in range(len(cols)) if not no_moe[x]]]
 
 date_replace= {}

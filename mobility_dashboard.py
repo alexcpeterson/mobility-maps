@@ -13,60 +13,50 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import data_cleaning as dc
 
-#Step 1: Launch the application
+#Launch the application
 app = dash.Dash(suppress_callback_exceptions=True)
 
 #Create plotly figures
-## Covid Cases Over Time
-case_trace_1 = go.Scatter(x=dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')].columns[55:],
-                    y=(dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')]
-                        [dc.covid_total.columns[55:]].iloc[0].tolist()),
-                    name = 'United States',
-                    mode = 'markers'
-                    )
+## Covid Cases Over Time Scatter Plot
+case_trace_1 = (go.Scatter(
+    x=dc.covid_total[(dc.covid_total.State == 'United States') 
+    & (dc.covid_total['County Name'] == 'Total')].columns[55:],
+    y=dc.covid_total[(dc.covid_total.State == 'United States') & 
+    (dc.covid_total['County Name'] == 'Total')]
+    [dc.covid_total.columns[55:]].iloc[0].values,
+    name = 'United States',
+    mode = 'markers')
+    )
 case_layout = go.Layout(title = 'Coronavirus Cases Over Time',
-                    title_font_size = 30,
-                    title_x = .5,
-                    height = 700, width = 1300
-                    )
+    title_font_size = 30,
+    title_x = .5,
+    height = 700, width = 1200
+    )
 case_fig = go.Figure(data=[case_trace_1],layout=case_layout)
 
-## Mobility Map Over Time
-# mob_map_fig = px.choropleth(dc.full_final[dc.full_final.date.isin(dc.dates[23:51])],
-#     locations='fips',
-#     geojson=dc.counties,
-#     color = 'grocery and pharmacy',
-#     scope='usa',
-#     animation_frame = 'date',
-#     animation_group = 'fips',
-#     range_color = (-40,10)          
-#              )
-# mob_layout = mob_map_fig.update_layout(
-#     title = 'Changing Prevalence of Movement to Different Locations',
-#     title_font_size = 30,
-#     title_x = .5,
-#     height = 700, width = 1400)
-##Mobility Scatter
-mob_scatter_fig = px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
-          x='grocery and pharmacy', y='cases',animation_frame = 'date',animation_group = 'state',
-           color = 'region', hover_name = 'state',size=dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
-          log_y = True, range_x = [-70,40],range_y = [1,500000])
+##Mobility Scatter Plot
+mob_scatter_fig = (px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
+    x='grocery and pharmacy', y='cases',animation_frame = 'date',animation_group = 'state',
+    color = 'region', hover_name = 'state',
+    size=dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
+    log_y = True, range_x = [-70,40],range_y = [1,500000])
+    )
 mob_scatter_fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 1500
 mob_scatter_fig.update_layout(
-    #transition = {'duration' : 2000},
     title_text = 'Comparison of Mobility to Grocery Stores and Pharmacies and COVID-19 Cases by Geographic Region',
     title_x = .5,
     height = 700
     )
 
-#Step 4: Create Dash layout
-states = [{'label' : i, 'value' : i} for i in dc.covid_total.State.unique()]\
+#Create Dash layout
+states = [{'label' : i, 'value' : i} for i in dc.covid_total.State.unique()]
+
 #tab-1
 covid_cases_html = html.Div([
      html.Div([
         html.Div([
             dcc.Graph(id='cases_fig',figure = case_fig)
-            ],style={'padding-top':'25px','display':'flex','width':'70%'}),
+            ],style={'padding-top':'25px','display':'flex','width':'80%'}),
         html.Div([
             html.Div([
                 html.Label('Choose a State'),
@@ -86,7 +76,7 @@ covid_cases_html = html.Div([
                         'fontSize' : '20px',
                         'padding-top' : '50px',
                         'display': 'inline-block'})
-        ],style={'width':'25%'})
+        ],style={'width':'19%'})
     ],style={'display':'flex'},className='wrapper'),
     html.Div([
         html.Div(
@@ -99,22 +89,7 @@ covid_cases_html = html.Div([
     )
 ])
 #tab-2
-mobility_map_html = html.Div([
-    dcc.RadioItems(
-        id = 'mobility_map_picker',
-        options = [
-            {'label' : 'Grocery and Pharmacy','value' : 'grocery and pharmacy'},
-            {'label' : 'Retail','value' : 'retail'},
-            {'label' : 'Parks', 'value' : 'parks'},
-            {'label' : 'Workplaces', 'value' : 'workplaces'},
-            {'label' : 'Residential', 'value' : 'residential'},
-            {'label' : 'Transit Stations', 'value' : 'transit stations'}
-        ],
-        value = 'Grocery and Pharmacy',
-        labelStyle = {'display' : 'inline-block'}
-    ),
-    html.Div(id = 'mobility_map')
-])
+
 #tab-3
 mobility_scatter_html = html.Div([
     dcc.RadioItems(
@@ -154,7 +129,7 @@ def render_content(tab):
         if tab == 'tab-1':
             return covid_cases_html
         elif tab == 'tab-2':
-            return mobility_map_html 
+            return None #removed tab
         elif tab == 'tab-3':
             return mobility_scatter_html
 #update second dropdown
@@ -163,36 +138,50 @@ def render_content(tab):
     [Input('state','value')])
 def update_county_dropdown(state):
     if state == 'United States':
-        return [{'label': i, 'value': 'State Total'} for i in dc.covid_total[dc.covid_total.State == state]['County Name']]
-    return [{'label': i, 'value': i} for i in dc.covid_total[dc.covid_total.State == state]['County Name']]
+        return ([{'label': i, 'value': 'State Total'} for i in 
+        dc.covid_total[dc.covid_total.State == state]['County Name']])
+    return ([{'label': i, 'value': i} for i in 
+        dc.covid_total[dc.covid_total.State == state]['County Name']])
 #update cases figure
 @app.callback(
     Output('cases_fig','figure'),
     [Input('state','value'),
     Input('county','value')])
 def update_case_figure(state,county='State Total'):
+    # handle default action on United States.
     if state == 'United States':
-        case_trace_2 = go.Scatter(x=dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')].columns[55:],
-                    y=(dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')]
-                        [dc.covid_total.columns[55:]].iloc[0].tolist()),
-                    name = 'United States',
-                    mode = 'markers'
-                    )
+        case_trace_2 = (go.Scatter(
+        x=dc.covid_total[(dc.covid_total.State == 'United States') & 
+        (dc.covid_total['County Name'] == 'Total')].columns[55:],
+        y=dc.covid_total[(dc.covid_total.State == 'United States') & 
+        (dc.covid_total['County Name'] == 'Total')][dc.covid_total.columns[55:]].iloc[0].values,
+        name = 'United States',
+        mode = 'markers')
+        )
         case_fig = go.Figure(data=[case_trace_2],layout=case_layout)
         return case_fig
-    elif county not in dc.covid_total[dc.covid_total.State == state]['County Name'].tolist():
-        case_trace_2 = go.Scatter(
-        x=dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == 'State Total')].columns[55:],
-        y= dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[55:]].iloc[0].tolist(),
+    # handle cases swapping between states after selecting a county, defaults to state total graph.
+    elif county not in dc.covid_total[dc.covid_total.State == state]['County Name'].values:
+        case_trace_2 = (go.Scatter(
+        x=dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == 'State Total')].columns[55:],
+        y= dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[55:]].iloc[0].values,
         name = county + ', ' + state,
         mode = 'markers')
+        )
         case_fig = go.Figure(data=[case_trace_2],layout=case_layout)
         return case_fig
-    case_trace_2 = go.Scatter(
-        x=dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == county)].columns[55:],
-        y= dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == county)][dc.covid_total.columns[55:]].iloc[0].tolist(),
+    #when state, county pair has been sucessfully passed
+    else:
+        case_trace_2 = (go.Scatter(
+        x=dc.covid_total[(dc.covid_total.State == state) & (
+        dc.covid_total['County Name'] == county)].columns[55:],
+        y= dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == county)][dc.covid_total.columns[55:]].iloc[0].values,
         name = county + ', ' + state,
         mode = 'markers')
+        )
     case_fig = go.Figure(data=[case_trace_2],layout=case_layout)
     return case_fig
 #update cases stats
@@ -201,35 +190,48 @@ def update_case_figure(state,county='State Total'):
     [Input('state','value'),
     Input('county','value')])
 def figure_stats(state,county='State Total'):
+    #page landing action
     if state == 'United States':
         return ''
-    elif county not in dc.covid_total[dc.covid_total.State == state]['County Name'].tolist():
+    # when swapping between states when a county has been selects, shows stats for state total
+    elif county not in dc.covid_total[dc.covid_total.State == state]['County Name'].values:
         usa_pop = dc.state_pop.population.sum()
         proportion_pop = dc.state_pop[dc.state_pop.state == state].population.sum() / usa_pop * 100
-        total_cases = dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')][dc.covid_total.columns[-1]].sum()
-        state_cases = dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[-1]].sum()
+        total_cases = (dc.covid_total[(dc.covid_total.State == 'United States') & 
+        (dc.covid_total['County Name'] == 'Total')][dc.covid_total.columns[-1]].sum())
+        state_cases = (dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[-1]].sum())
         proportion_cases = state_cases / total_cases * 100
         full_state = [key for key,val in dc.us_state_abbrev.items() if val == state][0]
-        text = "{} accounts for {:2f}% of the population in the United States and for {:2f}% of the total COVID-19 cases in the United States"
+        text = "{} accounts for {:2f}% of the population in the United States and \
+            for {:2f}% of the total COVID-19 cases in the United States"
         return text.format(full_state,proportion_pop,proportion_cases)
+    #when displaying state total cases
     if 'Total' in county:
         usa_pop = dc.state_pop.population.sum()
         proportion_pop = dc.state_pop[dc.state_pop.state == state].population.sum() / usa_pop * 100
-        total_cases = dc.covid_total[(dc.covid_total.State == 'United States') & (dc.covid_total['County Name'] == 'Total')][dc.covid_total.columns[-1]].sum()
-        state_cases = dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == county)][dc.covid_total.columns[-1]].sum()
+        total_cases = (dc.covid_total[(dc.covid_total.State == 'United States') & 
+        (dc.covid_total['County Name'] == 'Total')][dc.covid_total.columns[-1]].sum())
+        state_cases = (dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == county)][dc.covid_total.columns[-1]].sum())
         proportion_cases = state_cases / total_cases * 100
         full_state = [key for key,val in dc.us_state_abbrev.items() if val == state][0]
-        text = "{} accounts for {:2f}% of the population in the United States and for {:2f}% of the total COVID-19 cases in the United States"
+        text = "{} accounts for {:2f}% of the population in the United States and \
+            for {:2f}% of the total COVID-19 cases in the United States"
         return text.format(full_state,proportion_pop,proportion_cases)
+    #when state,county properly passed
     else:
-        cty_pop = (dc.county_pop[dc.county_pop.fips == dc.covid[(dc.covid.State == state) & (dc.covid['County Name'] == county)]
-            .countyFIPS.sum()].population.sum())
+        cty_pop = (dc.county_pop[dc.county_pop.fips == dc.covid[(dc.covid.State == state) & 
+        (dc.covid['County Name'] == county)].countyFIPS.sum()].population.sum())
         ste_pop = dc.state_pop[dc.state_pop.state == state].population.sum()
         proportion_pop = cty_pop / ste_pop * 100 
-        state_cases = dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[-1]].sum()
-        county_cases = dc.covid_total[(dc.covid_total.State == state) & (dc.covid_total['County Name'] == county)][dc.covid_total.columns[-1]].sum()
+        state_cases = (dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == 'State Total')][dc.covid_total.columns[-1]].sum())
+        county_cases = (dc.covid_total[(dc.covid_total.State == state) & 
+        (dc.covid_total['County Name'] == county)][dc.covid_total.columns[-1]].sum())
         proportion_cases = county_cases / state_cases * 100 
-        text =text = "{}, {} accounts for {:.2f}% of the state's population and for {:.2f}% of the state's total COVID-19 cases."
+        text =text = "{}, {} accounts for {:.2f}% of the state's population and \
+            for {:.2f}% of the state's total COVID-19 cases."
         return text.format(county,state,proportion_pop,proportion_cases)
 #update scatter
 @app.callback(
@@ -242,13 +244,16 @@ def update_mob_scatter_figure(metric):
         lower = dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])][metric].min()
         upper = dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])][metric].max()
         return [int(math.floor(lower/10.0))*10,int(math.ceil(upper / 10.0)) * 10]
-    mob_scatter_fig = px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
+    mob_scatter_fig = (px.scatter(dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])],
         x=metric, y='cases',animation_frame = 'date',animation_group = 'state',
-        color = 'region', hover_name = 'state',size=dc.mob_case_state[dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
+        color = 'region', hover_name = 'state',size=dc.mob_case_state
+        [dc.mob_case_state.date.isin(dc.dates[55:])].proportion.tolist(),
         log_y = True, range_x = scatter_range(metric),range_y = [1,500000])
+    )
     mob_scatter_fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 1500
     mob_scatter_fig.update_layout(
-        title_text = 'Comparison of Mobility to ' + dc.scatter_labels[metric] + ' and COVID-19 Cases by Geographic Region',
+        title_text = 'Comparison of Mobility to ' + dc.scatter_labels[metric] + \
+            ' and COVID-19 Cases by Geographic Region',
         title_x = .5,
         height = 700
     )
