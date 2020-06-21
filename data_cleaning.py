@@ -93,7 +93,7 @@ covid_total = covid_total.append(new_row,ignore_index=True)
 
 with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
     counties = json.load(response)
-full_df = pd.read_csv(r'mobility_report_US.csv',dtype={'fips':str})
+full_df = pd.read_csv(r'data/mobility_report_US.csv',dtype={'fips':str})
 full_df_copy = full_df.copy()
 new_dates = []
 for date in full_df_copy.date:
