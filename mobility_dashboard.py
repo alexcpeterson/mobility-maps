@@ -111,7 +111,7 @@ mobility_scatter_html = html.Div([
 ])
 
 app.layout = html.Div([
-    dcc.Tabs(id='tabs', value = 'tab-1', children =[
+    dcc.Tabs(id='tabs', value = 'tab-3', children =[
         dcc.Tab(label = 'COVID-19 Cases',value = 'tab-1'),
         #dcc.Tab(label = 'Mobility Maps',value = 'tab-2'),
         dcc.Tab(label = 'Mobility Comparisons',value = 'tab-3')
